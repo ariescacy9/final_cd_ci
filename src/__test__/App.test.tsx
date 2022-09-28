@@ -6,3 +6,9 @@ test('Renders main page correctly', () => {
   render(<App />)
   expect(true).toBeTruthy();
 })
+/*
+test('Renders main page correctly', () => {
+  render(<App />)
+  expect(true).toBeTruthy();
+})
+*/
