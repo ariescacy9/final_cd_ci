@@ -1,14 +1,10 @@
 import React from "react";
-import { render } from "@testing-library/react";
-import App from "../App";
+import { render, screen } from "@testing-library/react";
+import Main from "../components/main/Main";
+
 
 test('Renders main page correctly', () => {
-  render(<App />)
-  expect(true).toBeTruthy();
+  render(<Main />)
+  const textWelcome = screen.getByText(/Bienvenidos!!!/i)
+    expect(textWelcome);
 })
-/*
-test('Renders main page correctly', () => {
-  render(<App />)
-  expect(true).toBeTruthy();
-})
-*/
